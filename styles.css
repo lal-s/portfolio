@@ -127,9 +127,38 @@ li {
   margin-bottom: 0.65rem;
 }
 
-.link-list {
+.publication-list {
   padding: 0;
   list-style: none;
+}
+
+.publication-list li {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.publication-list li:last-child {
+  border-bottom: none;
+}
+
+.publication-list a {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.25rem;
+}
+
+.publication-list span {
+  display: block;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.publication-list p {
+  margin: 0;
+  color: #374151;
 }
 
 .link-list li {
