@@ -8,7 +8,7 @@ html {
 }
 
 :root {
-  --bg: #f6f8fc;
+  --bg: #0f172a;
   --surface: #ffffff;
   --surface-muted: #f8fafc;
   --text: #111827;
@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: radial-gradient(circle at top, #eef3ff 0%, var(--bg) 35%, #f7f8fc 100%);
+  background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 42%, #020617 100%);
   color: var(--text);
   line-height: 1.65;
 }
