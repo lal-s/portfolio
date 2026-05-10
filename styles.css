@@ -60,29 +60,34 @@ html {
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 0.6rem;
   max-width: 1100px;
-  margin: 0 auto 1.5rem;
-  padding: 0.9rem 2rem;
-  background: rgba(244, 246, 251, 0.92);
+  margin: 0.6rem auto 2rem;
+  padding: 0.95rem 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  border-top: 1px solid #e5e7eb;
-  border-bottom: 1px solid #e5e7eb;
+  border: 1px solid #dbe3ee;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 .section-tabs__tab {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.55rem 1rem;
+  min-height: 2.45rem;
+  padding: 0.55rem 1.05rem;
   border-radius: 999px;
   border: 1px solid #d1d5db;
-  background: white;
+  background: #ffffff;
   color: #374151;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: center;
   text-decoration: none;
-  transition: all 180ms ease;
+  transition: all 200ms ease;
 }
 
 .section-tabs__tab:hover {
@@ -96,7 +101,7 @@ html {
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   border-color: #1d4ed8;
   color: #ffffff;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.28);
 }
 
 .section-tabs__tab--active:hover {
@@ -296,12 +301,29 @@ li {
   }
 
   .section-tabs {
-    padding: 0.75rem 1rem;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding: 0.75rem;
     top: 0;
   }
 
+  .section-tabs::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .section-tabs::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+  }
+
   .section-tabs__tab {
-    font-size: 0.85rem;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.84rem;
   }
 
   .education-header--no-logo {
