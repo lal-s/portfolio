@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 6.5rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,6 +47,62 @@ a:hover {
 
 .hero__content {
   max-width: 760px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+  padding: 0.9rem 2rem;
+  background: rgba(244, 246, 251, 0.92);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.section-tabs__tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 180ms ease;
+}
+
+.section-tabs__tab:hover {
+  color: #1d4ed8;
+  border-color: #93c5fd;
+  background: #eff6ff;
+  text-decoration: none;
+}
+
+.section-tabs__tab--active {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-color: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.section-tabs__tab--active:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  border-color: #1e40af;
 }
 
 .eyebrow {
@@ -233,6 +293,15 @@ li {
   .hero__photo {
     width: 180px;
     height: 180px;
+  }
+
+  .section-tabs {
+    padding: 0.75rem 1rem;
+    top: 0;
+  }
+
+  .section-tabs__tab {
+    font-size: 0.85rem;
   }
 
   .education-header--no-logo {
